@@ -1,0 +1,481 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body{ font-family: arial; font-size: 14px; line-height: 18px; background: #ECE9D8; }
+.template{ width: 960px; margin: 0 auto; }
+.clear{ overflow: hidden; }
+.headersection{ height: 110px; background: #303030; }
+.title {
+  float: left;
+  margin-left: 50px;
+  margin-top: 8px;
+  width: 430px;
+}
+.title h2{ color: #DD672D; font-size: 45px; }
+.extra{ color: #fff; }
+.mainmenu {
+  float: right;
+  margin-top: 50px;
+  width: 480px;
+  color: #F1702E;
+}
+.mainmenu a{ text-decoration: none; color: #b9b9b9; font-weight: bold; padding-right: 8px; padding-left: 8px; }
+.mainmenu a:hover, #active{ color: #F26722 }
+.mainsection{ background: #fff; }
+.maintop {
+  border-bottom: 2px dotted #ccc;
+  margin: 10px 50px;
+}
+.maintop h2 {
+  font-size: 40px;
+  color: #333;
+}
+.maintop h3 {
+  color: #cfd1d0;
+  font-size: 28px;
+}
+.content{margin: 0 50px; }
+.description {
+  
+  text-align: center;
+}
+.description p {
+  color: #666;
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 28px;
+}
+.midcontent{height: 260px;
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f26722+0,f7a176+100 */
+background: #f26722; /* Old browsers */
+background: -moz-linear-gradient(left,  #f26722 0%, #f7a176 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #f26722 0%,#f7a176 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #f26722 0%,#f7a176 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f26722', endColorstr='#f7a176',GradientType=1 ); /* IE6-9 */
+
+}
+.midleft {
+  float: left;
+  margin-right: 37px;
+  padding: 20px 25px;
+  text-align: center;
+  width: 321px;
+  color: #fff;
+}
+.midleft h2 {
+  border-bottom: 2px dotted #fff;
+  font-size: 30px;
+  padding-bottom: 30px;
+  width: 250px;
+  margin-left: 40px;
+}
+.midleft p {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.midimage{ float: left; width: 437px; }
+.midimage img {
+  width: 437px;
+}
+.post {
+  border-bottom: 2px dotted #a5a5a5;
+  border-top: 2px dotted #a5a5a5;
+  margin: 10px 50px 15px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+}
+.postlink{}
+.footersection{}
+.samearticle {
+ 
+  float: left;
+  margin-left: 70px;
+  padding: 5px 15px;
+  width: 210px;
+  color: #fff;
+  text-align: center;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef8e5d+0,ce581c+100 */
+background: #ef8e5d; /* Old browsers */
+background: -moz-linear-gradient(top,  #ef8e5d 0%, #ce581c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ef8e5d 0%,#ce581c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ef8e5d 0%,#ce581c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef8e5d', endColorstr='#ce581c',GradientType=0 ); /* IE6-9 */
+
+}
+.allpost{ margin-left: -70px; }
+.samearticle h2 {
+  border-bottom: 2px dotted #fff;
+  font-size: 25px;
+  padding-bottom: 20px;
+  text-shadow: 0 1px 1px #333;
+}
+.samearticle p{}
+.postlink {
+  background: rgba(0, 0, 0, 0) url("../img/linkbg.png") repeat-x scroll 0 0;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding-top: 7px;
+  width: 170px;
+}
+.postlink a {
+  color: #d76124;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.footersection{ background: #FFFFFF; }
+.footportion {
+    color: #777;
+  margin: 0 50px 10px 50px;
+  text-align: center;
+}
+.footportion p{ margin: 0; }
+.footportion a{ color: #777; }
+.footportion a:hover{ text-decoration: none;color: #D05A1D }
+
+#gotoup{ background: url("../img/up.png")no-repeat scroll 0 0; bottom: 10px; right: 10px; position: fixed; width: 50px; height: 50px
+; cursor: pointer;  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+/*Responsive design*/
+
+@media screen and (max-width:768px){
+ .template{ width: 760px;}
+ .title { margin-left: 20px;width: 251px;}
+ .midleft { margin-right: 15px; width: 240px;}
+ .midleft h2 { margin-bottom: 0;margin-left: 0; margin-top: 5px;padding-bottom: 20px;width: 250px;}
+ .midimage {width: 310px; padding-top: 29px;}
+ .midimage img {width: 317px;}
+ .allpost { margin-left: -30px;}
+ .samearticle {margin-left: 30px;width: 170px;}
+.postlink {margin-left: 0;}
+
+}
+
+@media screen and (max-width: 480px){
+.template{ width: 470px;}
+ .title { margin-left: 0;text-align: center;width: 470px;}
+.title h2 {margin: 22px 0;}
+.mainmenu {margin-right: -26px;margin-top: 5px;}
+.maintop h2 { font-size: 25px;}
+.maintop h3 { font-size: 22px;}
+.description p {margin-top: 0;}
+.midcontent {height: 100%;
+background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f26722+0,f2a680+100 */
+background: #f26722; /* Old browsers */
+background: -moz-linear-gradient(top,  #f26722 0%, #f2a680 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f26722 0%,#f2a680 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f26722 0%,#f2a680 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f26722', endColorstr='#f2a680',GradientType=0 ); /* IE6-9 */
+
+}
+.midleft {margin-left: 30px;}
+.midimage {padding-top: 0;width: 370px;}
+.midimage img {margin-left: 21px;width: 322px;}
+.samearticle {margin-bottom: 20px;margin-left: 30px;width: 338px;}
+.postlink { width: 100%;}
+
+
+}
+
+@media screen and (max-width: 360px){
+  .template{ width: 350px; }
+  .title {width: 100%;}
+  .mainmenu {font-size: 10px;margin-right: 0;width: 100%; text-align: center;}
+  .content { margin: 0 18px;}
+  .maintop {margin: 10px 20px;}
+  .maintop h2 {font-size: 22px; text-align: center;}
+  .maintop h3 {font-size: 15px; text-align: center;}
+  .description p {font-size: 16px;line-height: 22px;}
+  .midleft {margin-left: 9px; padding-bottom: 0;}
+  .midimage {width: 350px;}  
+  .midimage img {margin-left: 0; width: 305px;}
+  .post {margin: 10px 18px;}
+  .samearticle { width: 282px;}
+  .footportion {margin: 0 10px 10px; }
+
+}
+
+@media screen and (max-width: 320px){
+      .template{ width: 310px; }
+}
